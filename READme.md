@@ -28,8 +28,8 @@ as a user
 
 ### Prerequisite setup:
 
-Clone this repo to your local machine and cd into it/n
-Run the command gem install bundle (if you don't have bundler already) and then bundle install\n
+Clone this repo to your local machine and cd into it
+Run the command gem install bundle (if you don't have bundler already) and then bundle install
 Running the app
 Launch IRB with the command irb
 
