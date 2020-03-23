@@ -1,10 +1,12 @@
 ## Requirements:
 
 Should be able to interact with the code via a REPL like IRB. (Don't need to implement a command line interface that takes input from STDIN).
+
 Should have deposits and withdrawals.
 Should have account statement (date, amount, balance) printing.
 Data can be kept in memory (it doesn't need to be stored to a database).
 Acceptance Criteria:
+
 Given a client makes a deposit of 1000 on 10-01-2012
 And a deposit of 2000 on 13-01-2012
 And a withdrawal of 500 on 14-01-2012
@@ -26,8 +28,8 @@ as a user
 
 ### Prerequisite setup:
 
-Clone this repo to your local machine and cd into it
-Run the command gem install bundle (if you don't have bundler already) and then bundle install
+Clone this repo to your local machine and cd into it/n
+Run the command gem install bundle (if you don't have bundler already) and then bundle install\n
 Running the app
 Launch IRB with the command irb
 
