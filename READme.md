@@ -1,6 +1,7 @@
 ## Requirements:
 
 Should be able to interact with the code via a REPL like IRB. (Don't need to implement a command line interface that takes input from STDIN).
+
 Should have deposits and withdrawals.
 Should have account statement (date, amount, balance) printing.
 Data can be kept in memory (it doesn't need to be stored to a database).
