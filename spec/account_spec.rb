@@ -18,4 +18,12 @@ describe Account do
       expect(subject.add).to eq (1)
     end
   end
+
+  describe '#withdraw' do 
+
+    it 'should withdraw from balance' do
+      expect(subject.withdraw).to eq (-1)
+    end
+  end
+
 end

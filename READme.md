@@ -4,7 +4,9 @@ Should be able to interact with the code via a REPL like IRB. (Don't need to imp
 Should have deposits and withdrawals.
 Should have account statement (date, amount, balance) printing.
 Data can be kept in memory (it doesn't need to be stored to a database).
+
 Acceptance Criteria:
+
 Given a client makes a deposit of 1000 on 10-01-2012
 And a deposit of 2000 on 13-01-2012
 And a withdrawal of 500 on 14-01-2012
