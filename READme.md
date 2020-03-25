@@ -22,7 +22,9 @@ date || credit || debit || balance
 
 ### User Stories
 
-as a user 
+
+
+
 
 
 ## Installation Instructions

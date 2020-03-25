@@ -1,9 +1,6 @@
 class Account
 
-  attr_reader :transactions 
-
   def initialize(balance = 0)
-    @transactions = []
     @balance = balance
   end  
 
@@ -11,8 +8,9 @@ class Account
     @balance
   end
 
-  def add
-    @balance += 1
+  def add(amount)
+    @balance += amount
+
   end
 
   def withdraw 

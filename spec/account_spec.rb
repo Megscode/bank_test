@@ -14,8 +14,8 @@ describe Account do
 
   describe '#add' do
 
-    it 'should add to balance' do
-      expect(subject.add).to eq (1)
+    it 'should add 1 to balance' do
+      expect(subject.add(1)).to eq (1)
     end
   end
 
@@ -26,4 +26,10 @@ describe Account do
     end
   end
 
+  describe '#add' do 
+
+    it 'should return a balance of 100 when I add 100' do
+      expect(subject.add(100)).to eq (100) 
+    end
+  end
 end
