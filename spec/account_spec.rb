@@ -1,6 +1,10 @@
 require 'account'
 
 describe Account do
+
+let(:account_test) { Account.new(0) }
+
+
   it 'should exist' do
   end
 
@@ -22,7 +26,7 @@ describe Account do
   describe '#withdraw' do 
 
     it 'should withdraw from balance' do
-      expect(subject.withdraw).to eq (-1)
+      expect(subject.withdraw(1)).to eq (-1)
     end
   end
 
@@ -30,6 +34,11 @@ describe Account do
 
     it 'should return a balance of 100 when I add 100' do
       expect(subject.add(100)).to eq (100) 
+    end
+
+    it 'should return a balance of 90 when I add 100 and withdraw 10' do
+      account_test.add(100)      
+      expect(account_test.withdraw(10)).to eq (90)
     end
   end
 end

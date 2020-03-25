@@ -13,8 +13,8 @@ class Account
 
   end
 
-  def withdraw 
-    @balance -= 1
+  def withdraw(amount) 
+    @balance -= amount
   end
   
 end 
