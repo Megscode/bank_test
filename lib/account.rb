@@ -10,9 +10,13 @@ class Account
   end
 
   def add(amount)
-    @balance += amount
-    @transaction.new_entry(amount, @balance, :credit)
-    @balance
+    if amount.to_i < 0 
+      return "You cannot deposit a negative amount"
+    else
+      @balance += amount
+      @transaction.new_entry(amount, @balance, :credit)
+      @balance
+    end
   end
 
   def withdraw(amount) 

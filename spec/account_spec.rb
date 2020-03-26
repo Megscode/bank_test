@@ -30,6 +30,10 @@ let(:account_test) { Account.new(0) }
       account_test.add(100)      
       expect(account_test.withdraw(10)).to eq (90)
     end
+
+    it 'should return an error message when I try to add a negative amount' do
+      expect(subject.add(-1)).to eq ("You cannot deposit a negative amount")
+    end
   end
 
   describe '#withdraw' do 
