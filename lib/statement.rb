@@ -13,7 +13,7 @@ class Statement
 
   def print_transactions
     puts header
-    transaction.transaction_history.reverse.map do |transaction|
+    transaction.transaction_history.reverse.each do |transaction|
       puts transaction.join(' || ').gsub("||  ||", "|| ||")
     end
   end

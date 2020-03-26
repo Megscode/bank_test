@@ -3,7 +3,7 @@ class Transaction
 attr_reader :transaction_history
 
   def initialize
-    @transaction_history = ['']
+    @transaction_history = []
   end
 
   def new_entry(amount, balance, type)

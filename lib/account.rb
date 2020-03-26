@@ -2,7 +2,7 @@ class Account
 
   def initialize(balance = 0, transaction = Transaction.new)
     @balance = balance
-    @transaction
+    @transaction = transaction
   end  
 
   def display_balance

@@ -15,7 +15,7 @@ describe Transaction do
     it "should add the transaction to the transaction history if a withdrawal is added" do
       Timecop.freeze do
         expect(subject.new_entry("50.00", "600.00", :debit)).to eq [
-          [Time.now.strftime("%d/%m/%Y"), "50.00", "", "600.00"]
+          [Time.now.strftime("%d/%m/%Y"), "", "50.00", "600.00"]
         ]
       end
     end
