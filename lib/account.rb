@@ -27,6 +27,5 @@ class Account
       @transaction.new_entry(amount, @balance, :debit)
       @balance
     end
-  end
-  
+  end 
 end 
