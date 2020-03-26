@@ -39,7 +39,7 @@ let(:account_test) { Account.new(0) }
     end
 
     it "should return the reduced balance when withdrawing 100" do
-      subject.deposit(150)
+      subject.add(150)
       expect(subject.withdraw(100)).to eq 50
     end
   end

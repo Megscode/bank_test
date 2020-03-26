@@ -6,7 +6,7 @@ attr_reader :transaction_history
     @transaction_history = ['']
   end
 
-  def store(amount, balance, type)
+  def new_entry(amount, balance, type)
     if type == :credit 
        @transaction_history << [Time.now.strftime("%d/%m/%Y"), sprintf('%.2f', amount), "", sprintf('%.2f', balance)]
     else

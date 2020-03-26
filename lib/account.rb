@@ -11,13 +11,14 @@ class Account
 
   def add(amount)
     @balance += amount
-    @transaction.store(amount, @balance, :credit)
-
+    @transaction.new_entry(amount, @balance, :credit)
+    @balance
   end
 
   def withdraw(amount) 
     @balance -= amount
-    @transaction.store(amount, @balance, :debit)
+    @transaction.new_entry(amount, @balance, :debit)
+    @balance
   end
   
 end 
