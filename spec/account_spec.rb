@@ -46,5 +46,9 @@ let(:account_test) { Account.new(0) }
       subject.add(150)
       expect(subject.withdraw(100)).to eq 50
     end
+
+    it 'should return an error message when I try to withdraw a posinegativetive amount' do
+      expect(subject.withdraw(-1)).to eq ("You cannot withdraw a negative amount")
+    end
   end
 end
