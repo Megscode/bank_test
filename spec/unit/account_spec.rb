@@ -12,7 +12,6 @@ let(:account_test) { Account.new(0) }
 
     it 'should return balance' do
       expect(subject.display_balance).to eq (0)
-
     end
   end
 
@@ -29,6 +28,12 @@ let(:account_test) { Account.new(0) }
     it 'should return a balance of 90 when I add 100 and withdraw 10' do
       account_test.add(100)      
       expect(account_test.withdraw(10)).to eq (90)
+    end
+
+    it 'should return a balance of 790 when I add 100 and add 700 and withdraw 10' do
+      account_test.add(100)     
+      account_test.add(700)  
+      expect(account_test.withdraw(10)).to eq (790)
     end
 
     it 'should return an error message when I try to add a negative amount' do
