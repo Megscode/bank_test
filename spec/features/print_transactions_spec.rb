@@ -13,12 +13,5 @@ describe Statement do
                                            [date, "50.00", '', "50.00"]] }
       end
     end
-  end                                   
-
-  describe '#statement' do
-
-    it 'should display a bank statement with the correct header formatting' do
-      expect(subject.header).to eq ("date || credit || debit || balance")
-    end
-  end
+  end  
 end
